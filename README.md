@@ -3,9 +3,10 @@
 
 ### Usage
 ```shell
-make install
-make compile
-make serve
+npm install
+npm run build
+npm test
+npm start
 ```
 
 ### Truffle Version output

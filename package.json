@@ -5,9 +5,11 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "compile": "tsc && truffle compile && webpack build",
-    "serve": "truffle migrate --reset && webpack serve",
-    "test": "tsc && truffle test"
+    "postinstall": "(cd app && npm i)",
+    "build": "truffle compile && tsc && webpack build",
+    "start": "truffle migrate --reset && tsc && webpack serve",
+    "test": "tsc && truffle test",
+    "clean": "(rm -rf node_modules; rm -rf app/node_modules; rm -rf app/dist; rm -rf build)"
   },
   "author": "",
   "license": "ISC",
