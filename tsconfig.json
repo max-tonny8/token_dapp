@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "checkJs": true,
+        "noEmit": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true
+    },
+    "include": ["test/**/*", "app/src/**/*"],
+    "exclude": ["node_modules/**/*", "app/node_modules/**/*"]
+}
