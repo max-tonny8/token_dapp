@@ -2,9 +2,16 @@
 ## ND1309 C2 Ethereum Smart Contracts, Tokens and Dapps - Project Starter 
 **PROJECT: Decentralized Star Notary Service Project** - For this project, you will create a DApp by adding functionality with your smart contract and deploy it on the public testnet.
 
+### Network
+```
+Network: rinkeby (id: 4)
+  Migrations: 0xC4995e520FFd978601e63dC547a558E9AF46ED29
+  StarNotary: 0x773c854328EA552C1A7442a3871280a9edC24A5f
+```
+
 ### Etherscan
-https://rinkeby.etherscan.io/address/0xd27aa3be5f9ccf3758264fc8df1d02faac877295
-https://rinkeby.etherscan.io/token/0xd27aa3be5f9ccf3758264fc8df1d02faac877295
+https://rinkeby.etherscan.io/address/0x773c854328EA552C1A7442a3871280a9edC24A5
+https://rinkeby.etherscan.io/token/0x773c854328EA552C1A7442a3871280a9edC24A5
 
 ### Usage
 ```shell
@@ -27,7 +34,7 @@ OpenZeppelin ^4.1.0
 ```shell
 Token Name: Star Notary
 Token Symbol: SNT
-Contract Address: 0xd27aA3be5F9ccf3758264Fc8Df1D02FaAc877295
+Contract Address (rinkeby): 0x773c854328EA552C1A7442a3871280a9edC24A5
 ```
 
 ### ToDo

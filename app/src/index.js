@@ -1,5 +1,7 @@
 import Web3 from 'web3';
-import starNotaryArtifact from '../../build/contracts/StarNotary.json';
+import abi from '../../abi.json';
+import networks from '../../networks.json';
+
 /**
  * @typedef {import('web3-eth-contract').Contract} Contract
  * @typedef {import('web3-core').provider} Provider
@@ -57,21 +59,19 @@ class App {
     static async start() {
         const web3 = new Web3(await loadProvider());
         const networkId = await web3.eth.net.getId();
-        const address = (() => {
-            if (networkId === 4) {
-                console.warn('Using rinkeby contract');
-                return `0xd27aA3be5F9ccf3758264Fc8Df1D02FaAc877295`;
-            } else {
-                const network = starNotaryArtifact.networks[networkId];
-                if (!network) {
-                    throw new Error(`network ${networkId} not supported`);
-                }
-            }
-        })();
+        const network = networks[networkId];
+        if (!network) {
+            setStatus(`Network not found for: ${networkId}`);
+            return;
+        }
+        if (!network.address) {
+            setStatus(`Network address not found for: ${networkId}`);
+            return;
+        }
         const contract = new web3.eth.Contract(
             // @ts-ignore
-            starNotaryArtifact.abi,
-            address
+            abi,
+            network.address
         );
         const accounts = await web3.eth.getAccounts();
         const account = accounts[0];

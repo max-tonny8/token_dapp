@@ -97,6 +97,13 @@ it('lets 2 users exchange stars', async () => {
     await instance.exchangeStars(12, 13);
     assert.equal(await instance.ownerOf(12), accounts[1]);
     assert.equal(await instance.ownerOf(13), accounts[0]);
+
+    // try without a valid owner
+    const promise = instance.exchangeStars(12, 13, {from: accounts[2]});
+    let rejected = false;
+    try { await promise; } catch (err) { rejected = true; }
+    assert.equal(rejected, true);
+    
 });
 
 it('lets a user transfer a star', async () => {
