@@ -73,7 +73,6 @@ class App {
             starNotaryArtifact.abi,
             address
         );
-        contract.defaultAccount
         const accounts = await web3.eth.getAccounts();
         const account = accounts[0];
         return new App(web3, account, castNotary(contract));
