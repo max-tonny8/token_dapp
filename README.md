@@ -17,6 +17,13 @@ Node v16.1.0
 Web3.js v1.3.5
 ```
 
+### Token Information
+```shell
+Token Name: Star Notary
+Token Symbol: SNT
+Contract Address: 0xd27aA3be5F9ccf3758264Fc8Df1D02FaAc877295
+```
+
 ### ToDo
 This Starter Code has already implemented the functionalities you implemented in the StarNotary (Version 2) exercise, and have comments in all the files you need to implement your tasks.
 

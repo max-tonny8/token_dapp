@@ -21,14 +21,7 @@
  * phrase from a file you've .gitignored so it doesn't accidentally become public.
  *
  */
-
-// const HDWallet = require('truffle-hdwallet-provider');
-// const infuraKey = "fj4jll3k.....";
-//
-// const fs = require('fs');
-// const mnemonic = fs.readFileSync(".secret").toString().trim();
-
-module.exports = {
+const config = {
   /**
    * Networks define how you connect to your ethereum client and let you set the
    * defaults web3 uses to send transactions. If you don't specify one truffle
@@ -100,4 +93,14 @@ module.exports = {
       // }
     }
   }
-}
+};
+
+try {
+  config.networks.rinkeby = require('./.rinkeby.js');
+} catch (err) {}
+
+try {
+  config.networks.ropsten = require('./.ropsten.js');
+} catch (err) {}
+
+module.exports = config;
