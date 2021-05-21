@@ -10,8 +10,8 @@ Network: rinkeby (id: 4)
 ```
 
 ### Etherscan
-https://rinkeby.etherscan.io/address/0x773c854328EA552C1A7442a3871280a9edC24A5
-https://rinkeby.etherscan.io/token/0x773c854328EA552C1A7442a3871280a9edC24A5
+https://rinkeby.etherscan.io/address/0x773c854328EA552C1A7442a3871280a9edC24A5f
+https://rinkeby.etherscan.io/token/0x773c854328EA552C1A7442a3871280a9edC24A5f
 
 ### Usage
 ```shell
@@ -34,7 +34,7 @@ OpenZeppelin ^4.1.0
 ```shell
 Token Name: Star Notary
 Token Symbol: SNT
-Contract Address (rinkeby): 0x773c854328EA552C1A7442a3871280a9edC24A5
+Contract Address (rinkeby): 0x773c854328EA552C1A7442a3871280a9edC24A5f
 ```
 
 ### ToDo
