@@ -14,12 +14,13 @@ npm test
 npm start
 ```
 
-### Truffle Version output
+### Version output
 ```shell
 Truffle v5.3.6 (core: 5.3.6)
 Solidity - ^0.8 (solc-js)
 Node v16.1.0
 Web3.js v1.3.5
+OpenZeppelin ^4.1.0
 ```
 
 ### Token Information
