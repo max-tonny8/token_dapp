@@ -1,7 +1,9 @@
-# ND1309 C2 Ethereum Smart Contracts, Tokens and Dapps - Project Starter 
+# Star Notary (SNT)
+## ND1309 C2 Ethereum Smart Contracts, Tokens and Dapps - Project Starter 
 **PROJECT: Decentralized Star Notary Service Project** - For this project, you will create a DApp by adding functionality with your smart contract and deploy it on the public testnet.
 
-### Token Tracker
+### Etherscan
+https://rinkeby.etherscan.io/address/0xd27aa3be5f9ccf3758264fc8df1d02faac877295
 https://rinkeby.etherscan.io/token/0xd27aa3be5f9ccf3758264fc8df1d02faac877295
 
 ### Usage
